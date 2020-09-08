@@ -19,6 +19,7 @@ h1 {
 h2 {
 	color: #66BFBF;
 	font-size: 2.5rem;
+	margin: 25px 0;
 	font-family: 'Montserrat', cursive;
 	font-weight: normal;
 }
@@ -46,7 +47,7 @@ p {
 hr {
 	border: dotted #EAF6F6 6px;
 	border-bottom: none;
-	margin: 100px auto;
+	margin: 50px auto;
 	width: 10%;
 }
 
@@ -71,6 +72,7 @@ hr {
 .nav-link {
 	font-family: 'Montserrat', cursive;
 	margin: 10px 20px;
+	font-size: 1.2rem;
 }
 
 .profile-picture {
