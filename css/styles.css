@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: #40514E;
 	margin: 0;
@@ -51,6 +55,42 @@ hr {
 	width: 10%;
 }
 
+/*NavBar*/
+
+.smart-scroll{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.scrolled-down {
+	transform: translateY(-100%);
+	transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+	transform: translateY(0);
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+	color: #407088;
+}
+
+/*Sections*/
+
+#profile{
+	padding-top:80px;
+}
+
+#skills {
+	padding-top:70px;
+}
+
+/*Page*/
+
 .top-container {
 	background-color: #E4F9F5;
 	line-height: 2;
@@ -99,17 +139,17 @@ hr {
 
 .skill-row {
 	text-align: left;
-	margin-bottom: 70px;
+	margin: 20px 0 70px;
 }
 
-.web-image {
+.left-float-image {
 	border-radius: 100%;
 	width: 25%;
 	float: left;
 	margin-right: 30px;
 }
 
-.development-image {
+.right-float-image {
 	border-radius: 100%;
 	width: 25%;
 	float: right;
@@ -144,6 +184,20 @@ hr {
 }
 
 .copyright {
+	padding-top: 13px;
 	color: #EAF6F6;
 	font-size: 0.75rem;
+}
+
+/*Work Page*/
+
+.projects {
+	width: 60%;
+	margin: 100px auto 100px auto;
+}
+
+@media (min-width: 1125px) {
+	.twitter-bot {
+		padding-bottom: 90px;
+	}
 }
