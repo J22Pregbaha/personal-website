@@ -1,90 +1,537 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Joshua Pregbaha</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="icon" type="text/css" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-
-	<script src="https://kit.fontawesome.com/1e8322c092.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Joshua Pregbaha — Senior Frontend Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="icon" type="text/css" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar smart-scroll navbar-expand-lg navbar-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#home">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#profile">About me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="work.html">Work</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<body>
 
-	<div class="top-container" id="home">
-		<img class="top-cloud" src="images/cloud.png" alt="cloud">
-		<h1>I'm Joshua</h1>
-		<h2>a <span class="pro">pro</span>grammer</h2>
-		<img class="bottom-cloud" src="images/cloud.png" alt="cloud">
-		<img src="images/mountain.png" alt="mountain">
-	</div>
+<!-- Progress Bar -->
+<div id="progress-bar"></div>
 
-	<div class="middle-container">
-		<div id="profile">
-			<img class="profile-picture" src="images/14CK016983.jpg" alt="profile-pic">
-			<h2>Hi there,</h2>
-			<p>I'm a software engineer. I love yoghurt, basketball, JavaScript, PHP, and everything and anything that has to do with software and programming. I've also been told I have a nice smile</p>
-		</div>
-		<hr>
-		<div id="skills">
-			<h2>My Skills</h2>
-			<div class="skill-row">
-				<img class="left-float-image" src="images/computer.png" alt="">
-				<h3>Design and Development</h3>
-				<p>I started programming at the age of 18 and I fell in love with it. I am a full-stack web developer and I am equipped and eager to learn any new aspect of programming. Feel free to take a look at some of my projects on my <a  href="https://github.com/J22Pregbaha" target="_blank">github</a>.</p>
-			</div>
-			<div class="skill-row">
-				<img class="right-float-image" src="images/giphy.gif" alt="">
-				<h3>Writing</h3>
-				<p>I love writing stories and sharing all the random thoughts that come to mind in a bid to put a smile on someone's face. You can read all my stories and random thoughts on my <a  href="https://ofaweirdo.wordpress.com/" target="_blank">blog</a>.</p>
-			</div>
-		</div>
-		<hr>
-		<div id="contact">
-			<h2>Get In Touch</h2>
-			<a class="btn" href="mailto:jpregbaha@gmail.com">CONTACT ME</a>
-		</div>
-	</div>
+<!-- Nav -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">J<span>.</span>Pregbaha</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:jpregbaha@gmail.com" class="nav-cta">Hire Me</a>
+  <div class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" class="mm-link">About</a>
+  <a href="#skills" class="mm-link">Skills</a>
+  <a href="#experience" class="mm-link">Experience</a>
+  <a href="#projects" class="mm-link">Projects</a>
+  <a href="#contact" class="mm-link">Contact</a>
+</div>
 
-	<div class="bottom-container">
-		<a class="footer-link" href="https://www.linkedin.com/in/joshua-pregbaha/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-		<a class="footer-link" href="https://twitter.com/JPregbaha" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-		<a class="footer-link" href="https://github.com/J22Pregbaha" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-		<a class="footer-link" href="https://ofaweirdo.wordpress.com/" target="_blank"><i class="fab fa-wordpress fa-2x"></i></a>
-		<p class="copyright">© <script>document.write(new Date().getFullYear());</script> Joshua Pregbaha💓</p>
-	</div>
+<!-- ── Hero ── -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Available for new opportunities</div>
+      <h1 class="hero-name">
+        Joshua<br /><em>Pregbaha</em>
+      </h1>
+      <p class="hero-tagline">
+        Senior Frontend Engineer who bridges thoughtful architecture with pixel-precise execution. I build fast, scalable React applications that delight users and endure the test of scale.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          View Work
+        </a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+        <a href="#" class="btn-outline" onclick="alert('CV download coming soon.')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
 
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-label">// Profile snapshot</div>
+        <div class="hero-card-stat">
+          <div class="num"><em>6+</em></div>
+          <div class="desc">Years of Engineering Experience</div>
+        </div>
+        <div class="hero-card-divider"></div>
+        <div class="hero-card-stat">
+          <div class="num"><em>5</em></div>
+          <div class="desc">Production Applications Shipped</div>
+        </div>
+        <div class="hero-card-divider"></div>
+        <div class="hero-card-label" style="margin-top:0;">// Core Stack</div>
+        <div class="hero-card-pills">
+          <span class="pill">React.js</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">TailwindCSS</span>
+          <span class="pill">AWS</span>
+        </div>
+      </div>
+      <div class="dots-grid"></div>
+    </div>
+  </div>
+</section>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+<!-- ── About ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-sidebar">
+        <div class="big-letter">JP</div>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="n"><em>6+</em></div>
+            <div class="l">Years experience</div>
+          </div>
+          <div class="stat-box">
+            <div class="n"><em>5</em></div>
+            <div class="l">Production apps</div>
+          </div>
+          <div class="stat-box">
+            <div class="n"><em>MSc</em></div>
+            <div class="l">Strathclyde, UK</div>
+          </div>
+          <div class="stat-box">
+            <div class="n"><em>3+</em></div>
+            <div class="l">Certifications</div>
+          </div>
+        </div>
+      </div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <div class="about-content reveal">
+        <div class="section-header">
+          <div class="section-tag">About me</div>
+          <h2 class="section-title">Engineer at <em>heart</em>,<br />craftsman by practice</h2>
+        </div>
+        <p>
+          I'm a <strong>Senior Frontend Engineer</strong> with over 6 years of experience shipping high-quality React applications across healthcare, e-commerce, and enterprise software. Holding an MSc in Advanced Software Engineering from the University of Strathclyde, I combine academic rigour with deep production instinct.
+        </p>
+        <p>
+          My work spans from architecting entire frontend systems as a sole engineer, to leading teams building AWS cloud-native applications. I currently lead frontend development at <strong>DrugStoc</strong>, and have previously shipped across <strong>Trilogy</strong>'s portfolio of cloud platforms.
+        </p>
+        <p>
+          I believe great frontend is about more than visual output — it's about <strong>systems thinking</strong>, predictable component contracts, and building interfaces that scale without degrading. I care deeply about performance, state predictability, and measurable UX outcomes.
+        </p>
+        <div class="about-values">
+          <div class="value-item"><div class="value-dot"></div>Component architecture that scales without drift</div>
+          <div class="value-item"><div class="value-dot"></div>State management with clarity and minimal side-effects</div>
+          <div class="value-item"><div class="value-dot"></div>Performance as a feature, not an afterthought</div>
+          <div class="value-item"><div class="value-dot"></div>UX driven by empathy for the end user</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Skills ── -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Expertise</div>
+      <h2 class="section-title">Tools of the <em>craft</em></h2>
+    </div>
+    <div class="skills-layout reveal">
+      <div class="skill-group">
+        <div class="skill-group-label">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">TailwindCSS</span>
+          <span class="skill-tag">React Query</span>
+          <span class="skill-tag">Context API</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Angular</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Backend & Runtime</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Cloud & DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">CloudFormation</span>
+          <span class="skill-tag">Infrastructure as Code</span>
+          <span class="skill-tag">Cloud-Native Apps</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Architecture</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Component Systems</span>
+          <span class="skill-tag">State Management</span>
+          <span class="skill-tag">Data Fetching Patterns</span>
+          <span class="skill-tag">Progressive Web Apps</span>
+          <span class="skill-tag">Scalable UI Architecture</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Tools & Workflow</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Yarn / NPM</span>
+          <span class="skill-tag">Unit Testing</span>
+          <span class="skill-tag">Code Review</span>
+          <span class="skill-tag">Agile</span>
+          <span class="skill-tag">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Blockchain Basics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Experience ── -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Career</div>
+      <h2 class="section-title">Where I've <em>built</em></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">
+          <div class="timeline-company">DrugStoc</div>
+          <div class="timeline-period">May 2024 – Present</div>
+        </div>
+        <div class="timeline-role">Frontend Developer</div>
+        <div class="timeline-desc">
+          Leading frontend development for a healthcare supply-chain platform, designing and building production-grade React applications that serve pharmacies and healthcare providers across Nigeria.
+        </div>
+        <div class="timeline-achievements">
+          <div class="timeline-achievement">Architect and build React applications aligned with UX team specifications</div>
+          <div class="timeline-achievement">Maintain cross-application consistency in HTML, CSS, and shared JavaScript</div>
+          <div class="timeline-achievement">Establish standard development tooling and processes across the engineering team</div>
+          <div class="timeline-achievement">Serve as technical liaison between development staff and project management</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">
+          <div class="timeline-company">Trilogy</div>
+          <div class="timeline-period">Dec 2021 – Aug 2023 · 1 yr 9 mos</div>
+        </div>
+        <div class="timeline-role">Software Engineer II</div>
+        <div class="timeline-desc">
+          Contributed to multiple AWS cloud-native web applications across a diverse portfolio, working full-stack with modern frameworks and achieving consistently high acceptance rates in code review.
+        </div>
+        <div class="timeline-achievements">
+          <div class="timeline-achievement">Built features using React.js, Angular, Next.js, Node.js, Express, and Spring Boot</div>
+          <div class="timeline-achievement">Implemented user authentication flows with React.js, Express, and Spring Security</div>
+          <div class="timeline-achievement">Delivered Infrastructure as Code using AWS CloudFormation for multi-service architectures</div>
+          <div class="timeline-achievement">Engineered search and filtering systems using Angular, Express, and Node.js</div>
+          <div class="timeline-achievement">Developed robust API endpoints across multiple server-side frameworks</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">
+          <div class="timeline-company">Covenant University</div>
+          <div class="timeline-period">Apr 2021 – Aug 2021 · 5 mos</div>
+        </div>
+        <div class="timeline-role">Software Development Intern</div>
+        <div class="timeline-desc">
+          Contributed to the design and development of the Public Health Information System (PHIS), a progressive cloud application serving the university and broader research community.
+        </div>
+        <div class="timeline-achievements">
+          <div class="timeline-achievement">Built PHIS frontend with React.js and Flask backend, deployed on FEDGEN Testbed</div>
+          <div class="timeline-achievement">Co-authored manuscripts for publication based on project findings</div>
+          <div class="timeline-achievement">Mentored two junior web developers on React.js and Node.js fundamentals</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">
+          <div class="timeline-company">Covenant University</div>
+          <div class="timeline-period">Nov 2018 – Apr 2021 · 2 yrs 6 mos</div>
+        </div>
+        <div class="timeline-role">Web Developer</div>
+        <div class="timeline-desc">
+          Owned and operated the SIWES (Industrial Training) online platform for the university — an ambitious initiative designed to eventually serve the national student placement programme.
+        </div>
+        <div class="timeline-achievements">
+          <div class="timeline-achievement">Developed and deployed the full SIWES online platform independently</div>
+          <div class="timeline-achievement">Managed ongoing maintenance and feature updates across the platform lifecycle</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-meta">
+          <div class="timeline-company">Tehilah Base Digital LTD</div>
+          <div class="timeline-period">Jan 2018 – Jul 2018 · 7 mos</div>
+        </div>
+        <div class="timeline-role">Web Development Intern</div>
+        <div class="timeline-desc">
+          First professional engineering experience — established foundations in web development within an agency environment, contributing to client-facing projects.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Projects ── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Projects</div>
+      <h2 class="section-title">Things I'm <em>building</em></h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Featured: Pillometer -->
+      <div class="project-card featured">
+        <div class="project-header">
+          <div>
+            <div class="project-meta">Lead Frontend Engineer · Production Healthcare Platform</div>
+            <div class="project-title" style="color:#F7F5F0; font-size:1.6rem;">Pillometer Web Application</div>
+          </div>
+          <div class="project-badge">Lead</div>
+        </div>
+        <p class="project-desc">
+          Core frontend for a healthcare platform enabling pharmacies and providers to manage drug access, workflows, and patient interactions. Architected the frontend to serve as the foundation for the entire Pillometer product ecosystem.
+        </p>
+        <div class="project-impact">
+          Reduced UI inconsistency across modules through shared component architecture · Enabled faster feature delivery across the product ecosystem · Decreased regression risk through structured state management
+        </div>
+        <div class="project-tech">
+          <span class="project-tech-tag">React</span>
+          <span class="project-tech-tag">Vite</span>
+          <span class="project-tech-tag">TailwindCSS</span>
+          <span class="project-tech-tag">React Query</span>
+          <span class="project-tech-tag">Context API</span>
+        </div>
+      </div>
+
+      <!-- Goodpill -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">GP</div>
+          <div class="project-badge">Sole Eng.</div>
+        </div>
+        <div class="project-meta">Sole Frontend Engineer</div>
+        <div class="project-title">The Goodpill Project</div>
+        <p class="project-desc">Built the entire frontend for a pharmacy-focused platform within the Pillometer ecosystem. Engineered a sophisticated cart and checkout system with seamless local-to-backend cart merging on authentication.</p>
+        <div class="project-impact">
+          Eliminated cart data loss on login · Improved checkout conversion reliability · Reduced redundant API calls via context-based caching
+        </div>
+        <div class="project-tech">
+          <span class="project-tech-tag">React</span>
+          <span class="project-tech-tag">TailwindCSS</span>
+          <span class="project-tech-tag">React Query</span>
+          <span class="project-tech-tag">Context API</span>
+        </div>
+      </div>
+
+      <!-- PBM -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">PB</div>
+          <div class="project-badge">Lead</div>
+        </div>
+        <div class="project-meta">Lead Frontend Engineer</div>
+        <div class="project-title">PBM Dashboard</div>
+        <p class="project-desc">Built a Pharmacy Benefits Management dashboard with dynamic, configurable table systems and modular UI architecture to support operational and administrative workflows.</p>
+        <div class="project-impact">
+          Increased operational efficiency for internal teams · Reduced frontend technical debt · Accelerated new feature delivery
+        </div>
+        <div class="project-tech">
+          <span class="project-tech-tag">React</span>
+          <span class="project-tech-tag">TailwindCSS</span>
+          <span class="project-tech-tag">React Query</span>
+          <span class="project-tech-tag">Yarn</span>
+        </div>
+      </div>
+
+      <!-- E-Commerce -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">EC</div>
+          <div class="project-badge">Engineer</div>
+        </div>
+        <div class="project-meta">Frontend Engineer</div>
+        <div class="project-title">E-Commerce Platform</div>
+        <p class="project-desc">Engineered a robust cart and checkout system with seamless merging of local and backend carts, optimised async data flows, and context-based architecture to eliminate redundant API calls.</p>
+        <div class="project-impact">
+          Eliminated cart data loss · Improved checkout conversion · Enhanced overall user experience
+        </div>
+        <div class="project-tech">
+          <span class="project-tech-tag">React</span>
+          <span class="project-tech-tag">Context API</span>
+          <span class="project-tech-tag">React Query</span>
+        </div>
+      </div>
+
+      <!-- Telehealth AI -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon" style="background: #2563EB;">AI</div>
+          <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.3rem;">
+            <div class="project-badge">Architect</div>
+            <div class="project-wip">In Progress</div>
+          </div>
+        </div>
+        <div class="project-meta">Architect & Frontend Engineer</div>
+        <div class="project-title">Telehealth AI Platform</div>
+        <p class="project-desc">Building a telehealth platform enabling drug search, AI conversation, and connections with healthcare professionals. Designing frontend architecture and conversational UI systems from the ground up.</p>
+        <div class="project-impact">
+          Laying the foundation for scalable AI-assisted healthcare access
+        </div>
+        <div class="project-tech">
+          <span class="project-tech-tag">React</span>
+          <span class="project-tech-tag">AI Integration</span>
+          <span class="project-tech-tag">Conversational UI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <div class="section-tag">Get in touch</div>
+      <h2 class="contact-title">Let's build something <em>great</em> together</h2>
+      <p class="contact-subtitle">
+        I'm open to senior frontend roles, contract projects, and collaborative builds. Reach out and let's talk.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:jpregbaha@gmail.com" class="contact-link">
+          <span class="contact-link-icon">Email</span>
+          jpregbaha@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/joshuapregbaha" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span class="contact-link-icon">LinkedIn</span>
+          /in/joshuapregbaha
+        </a>
+        <!-- <a href="https://j22pregbaha.github.io/personal-website/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span class="contact-link-icon">Portfolio</span>
+          j22pregbaha.github.io
+        </a>
+        <a href="tel:+2348075773461" class="contact-link">
+          <span class="contact-link-icon">Phone</span>
+          +234 807 577 3461
+        </a> -->
+      </div>
+      <div class="footer-note">© <script>document.write(new Date().getFullYear());</script> Joshua Pregbaha · Senior Frontend Engineer · Lagos, Nigeria</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Progress bar
+  const progressBar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    progressBar.style.width = (scrollTop / scrollHeight * 100) + '%';
+  }, { passive: true });
+
+  // Nav scroll state
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Active nav link
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal, .timeline-item, .project-card').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  // Staggered timeline items
+  document.querySelectorAll('.timeline-item').forEach((item, i) => {
+    item.style.transitionDelay = (i * 0.1) + 's';
+  });
+
+  // Staggered project cards
+  document.querySelectorAll('.project-card').forEach((card, i) => {
+    card.style.transitionDelay = (i * 0.08) + 's';
+  });
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let menuOpen = false;
+  hamburger.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+  });
+  document.querySelectorAll('.mm-link').forEach(link => {
+    link.addEventListener('click', () => {
+      menuOpen = false;
+      mobileMenu.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>
